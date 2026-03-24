@@ -1,0 +1,47 @@
+
+      <svg xmlns='http://www.w3.org/2000/svg' 
+           viewBox='0 0 100 100' 
+           fill='none' 
+           stroke='none' 
+           width='100' 
+           height='100'>
+         <style>
+            .amber-500 { 
+               fill: #FFC107; 
+            }
+            .dark-mode { 
+               fill: #020617; 
+            }
+         </style>
+         <circle cx='50' 
+                 cy='50' 
+                 r='40' 
+                 class='dark-mode' />
+         <path d='M50 10L90 50L50 90L10 50L50 10' 
+               stroke='#FFC107' 
+               stroke-width='5' 
+               fill='none' />
+         <text x='50' 
+               y='50' 
+               font-size='30' 
+               font-family='Arial' 
+               text-anchor='middle' 
+               fill='#FFC107'>الفوال</text>
+         <animateTransform attributeName='transform' 
+                            type='rotate' 
+                            from='0 50 50' 
+                            to='360 50 50' 
+                            dur='10s' 
+                            repeatCount='indefinite' />
+      </svg>
+      <script>
+         // Add animation and responsive logic using JavaScript and Tailwind CSS
+         const svg = document.querySelector('svg');
+         svg.addEventListener('mouseover', () => {
+            svg.classList.add('animate-spin');
+         });
+         svg.addEventListener('mouseout', () => {
+            svg.classList.remove('animate-spin');
+         });
+      </script>
+   
